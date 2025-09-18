@@ -4,8 +4,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="refresh" content="0; url=views/home.html">
+    <!-- redirect to the real homepage in your repo -->
+    <meta http-equiv="refresh" content="0; url=submission/views/home.html">
     <title>Loading…</title>
+    <script>
+        // JS fallback in case meta refresh is blocked
+        location.replace('submission/views/home.html');
+    </script>
 </head>
 
 <body></body>
