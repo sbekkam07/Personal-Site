@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sohan – Hobbies</title>
+
+  <!-- Bootstrap + Font Awesome -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    body {
+      background-color: #f8f9fa; /* subtle page background */
+    }
+    .hobby-card {
+      background-color: #dbfffa; /* same as home textbox */
+    }
+    .hobby-card img {
+      border-radius: 8px;
+      height: 160px;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      color: #0a3d62; /* dark blue heading for consistency */
+    }
+    footer {
+      background-color: #343a40;
+      color: white;
+    }
+    html, body {
+  height: 100%;               /* full viewport height */
+  margin: 0;                  /* remove default spacing */
+  display: flex;
+  flex-direction: column;     /* stack navbar, main, footer */
+}
+
+main {
+  flex: 1;                    /* pushes footer to the bottom */
+}
+
+body {
+  background-color: #f8f9fa;  /* keep your background color */
+}
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="home.html">My Home Page</a>
+  
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#siteNav"
+              aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="siteNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- Home.html -->
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <!-- Hobbies.html -->
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="hobbies.html">Home</a></li>
+          <!-- Projects.html -->
+          <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+          <!-- Resume.html -->
+          <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+        </ul>
+  
+        <!-- right icon -->
+        <i class="fa-solid fa-heart fa-lg text-white ms-auto"></i>
+      </div>
+    </div>
+  </nav>
+  
+  
+
+  <!-- MAIN CONTENT -->
+  <main class="container my-4">
+    <h2 class="text-center mb-4">My Hobbies & Interests</h2>
+
+    <div class="row g-4 justify-content-center">
+      <!-- Card 1 -->
+      <div class="col-md-3 hobby-card text-center shadow-sm">
+        <img src="../resources/images/coding.png" alt="Coding" class="img-fluid">
+        <h5 class="fw-bold">Coding</h5>
+        <p>I love building tools, exploring new tech, and bringing ideas to life with code.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-3 hobby-card text-center shadow-sm">
+        <img src="../resources/images/investing.png" alt="Investing" class="img-fluid">
+        <h5 class="fw-bold">Investing</h5>
+        <p>Markets sharpen my analytical thinking and teach patience and discipline.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-3 hobby-card text-center shadow-sm">
+        <img src="../resources/images/basketball.jpeg" alt="Basketball" class="img-fluid">
+        <h5 class="fw-bold">Basketball</h5>
+        <p>I love playing with friends and meeting new poeple through the game.</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-md-3 hobby-card text-center shadow-sm">
+        <img src="../resources/images/gym.jpeg" alt="Gym" class="img-fluid">
+        <h5 class="fw-bold">Gym</h5>
+        <p>Working out consistently gives me some structure and I love going.</p>
+      </div>
+    </div>
+</main>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-3">
+    <a href="https://www.instagram.com/5ohan.bekkam/" target="_blank" class="mx-2 text-white"><i class="fab fa-instagram fa-lg"></i></a>
+    <a href="https://www.linkedin.com/in/sohan-bekkam-682023325/" target="_blank" class="mx-2 text-white"><i class="fab fa-linkedin fa-lg"></i></a>
+    <a href="https://github.com/sbekkam07" target="_blank" class="mx-2 text-white"><i class="fab fa-github fa-lg"></i></a>
+  </footer>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

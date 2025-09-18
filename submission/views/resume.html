@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sohan – Resume</title>
+
+    <!-- Bootstrap + Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Shared styling -->
+    <link rel="stylesheet" href="../resources/css/home.css" />
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+
+        footer {
+            flex-shrink: 0;
+            background: #343a40;
+            color: #fff;
+        }
+
+        h2 {
+            color: #0a3d62;
+            text-align: left;
+            margin: 1rem 0;
+        }
+
+        .resume-pane {
+            background: #dbfffa;
+            border-radius: 12px;
+            padding: 1rem;
+        }
+
+        .pdf-obj {
+            width: 100%;
+            height: 80vh;
+            border: 0;
+            border-radius: 8px;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+
+        footer {
+            flex-shrink: 0;
+        }
+
+        /* heading left, like your other pages */
+        h2 {
+            color: #0a3d62;
+            margin: 1rem 0;
+        }
+
+        /* centered “card” viewer */
+        .resume-frame {
+            /* width behaves like: min(900px, 90vw) */
+            width: clamp(320px, 90vw, 900px);
+            /* height behaves like: between 65vh and 85vh depending on screen */
+            height: clamp(65vh, 80vh, 1000px);
+
+            margin: 0 auto;
+            /* center the card */
+            background: #dbfffa;
+            /* your blue */
+            border-radius: 14px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, .12);
+            padding: 12px;
+            overflow: hidden;
+            /* hide PDF edges */
+        }
+
+        .resume-embed {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-radius: 10px;
+            background: #fff;
+            /* white page behind PDF */
+        }
+
+        /* buttons below the card */
+        .resume-actions {
+            text-align: center;
+            margin: 12px auto 0;
+        }
+
+        .resume-actions .btn {
+            min-width: 180px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">My Home Page</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNav"
+                aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="siteNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Home.html -->
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <!-- Hobbies.html -->
+                    <li class="nav-item"><a class="nav-link" href="hobbies.html">Hobbies</a></li>
+                    <!-- Projects.html -->
+                    <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+                    <!-- Resume.html -->
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="resume.html">Home</a></li>
+                </ul>
+
+                <!-- right icon -->
+                <i class="fa-solid fa-heart fa-lg text-white ms-auto"></i>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- MAIN -->
+    <main class="container my-4">
+        <h2>Resume</h2>
+
+        <!-- Centered card-style PDF -->
+        <div class="resume-frame">
+            <object data="../resources/Sohan_Bekkam_Resume_2.pdf" type="application/pdf" class="resume-embed">
+                <!-- Fallback for browsers that can’t embed PDFs -->
+                <iframe src="../resources/Sohan_Bekkam_Resume_2.pdf" class="resume-embed"></iframe>
+            </object>
+        </div>
+
+        <!-- Actions under the card -->
+        <div class="resume-actions" style="max-width:900px;">
+            <a class="btn btn-dark me-2" href="../resources/Sohan_Bekkam_Resume_2.pdf" target="_blank" rel="noopener">
+                <i class="fa-solid fa-up-right-from-square me-1"></i> Open in new tab
+            </a>
+            <a class="btn btn-outline-dark" href="../resources/Sohan_Bekkam_Resume_2.pdf"
+                download="Sohan_Bekkam_Resume.pdf">
+                <i class="fa-solid fa-download me-1"></i> Download PDF
+            </a>
+        </div>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="text-center py-3">
+        <a href="https://www.instagram.com/5ohan.bekkam/" target="_blank" class="mx-2 text-white"><i
+                class="fab fa-instagram fa-lg"></i></a>
+        <a href="https://www.linkedin.com/in/sohan-bekkam-682023325/" target="_blank" class="mx-2 text-white"><i
+                class="fab fa-linkedin fa-lg"></i></a>
+        <a href="https://github.com/sbekkam07" target="_blank" class="mx-2 text-white"><i
+                class="fab fa-github fa-lg"></i></a>
+    </footer>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

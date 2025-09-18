@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    justify-content: space-between; /* Pushes items to opposite ends */
+    align-items: center; /* Vertically centers the items */
+  }
+  
+  .my-pic {
+    width: 20px;   /* pick whatever size */
+    height: auto;   /* keeps aspect ratio */
+  }
